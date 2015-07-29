@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:id="@+id/big_window_layout">
+
+        <RelativeLayout
+
+            android:layout_gravity="bottom"
+            android:padding="8dp"
+            android:layout_width="300dp"
+            android:layout_height="280dp"
+            android:background="#e0000000">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:text="aaaaaaaa"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv2"
+                android:layout_gravity="center_horizontal"
+                android:text="aaaaaaaa"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv3">
+
+                <Button
+                    android:id="@+id/close"
+                    android:layout_weight="1.0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="closeWindow" />
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_weight="1.0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="back" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/img"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal|top"-->
+            <!--android:src="@drawable/ic_launcher_download" />-->
+            <!--<com.jp.administrator.myloadingtest.ClearAnimationView-->
+                <!--android:layout_gravity="center_horizontal|top"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--/>-->
+    <com.jp.administrator.myloadingtest.AnimationView
+        android:id="@+id/circle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal|top"
+        android:clickable="true" />
+</FrameLayout>

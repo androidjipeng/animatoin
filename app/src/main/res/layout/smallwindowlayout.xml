@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="40dp"
+    android:id="@+id/small_window_layout"
+    android:layout_height="30dp">
+    <TextView
+        android:id="@+id/smalltv"
+        android:text="小窗口"
+        android:gravity="center"
+        android:background="#B22222"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
